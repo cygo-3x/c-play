@@ -7,6 +7,4 @@ Learning C in public.
 - **experiments/** - Personal exploratory code and quick tests.
 - **projects/** - Larger, self-contained programs and applications.
 
-Be patient with me. I am still learning all of this here.
-
-lease follow me on 𝕏 for more info [@cygo_3x](https://x.com/cygo_3x).
+Please follow me on 𝕏 [@cygo_3x](https://x.com/cygo_3x)
