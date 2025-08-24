@@ -12,12 +12,15 @@ int main()
     double volume = 0.0;
     const double Pi = 3.14159;
 
+    printf("Circle Calculator\n");
+
+    // ask for input
+    printf("Enter the radius: ");
+    scanf("%lf", &radius);
+
     /* calculate: area; surface area; volume
         and give output (answer)
     */
-    printf("Enter the radius: ");
-    scanf("%lf", &radius);
-    
     area = Pi * pow(radius, 2);
     printf("Area: %.2lf\n", area);
 
