@@ -1,12 +1,20 @@
 #include <stdio.h>
 
-// CODE INCOMPLETE! I WILL COMPLETE IT TOMORROW AFTER MY SOFTWARE SUPPORT TEST
+// CODE INCOMPLETE! IT IS RESTRUCTURED. I WILL TRY TO COMPLETE IT AFTER GYM
 
-double likertScale();
+void getResponses(int maxUsers, int *userCount, double *totalPoints);
+double calculateAverage(double totalPoints, int userCount);
+void displayResult(double average, int userCount);
 
 int main()
 {
     // 5-POINT LIKERT SCALE
+
+    // declare and initialize variables
+    int userCount = 0;
+    double totalPoints = 0.0;
+    int maxUsers = 100; // or any number you want to survey
+
     printf("5-Point Likert Scale Program\n");
 
     // display choice (points)
@@ -14,34 +22,30 @@ int main()
     printf("2. Agree\n");
     printf("3. Neutral\n");
     printf("4. Disagree\n");
-    printf("5. Strongly Disagree\n");
-    printf("\n");
+    printf("5. Strongly Disagree\n\n");
 
-    likertScale();
+    // call functions
+    getResponses(maxUsers, &userCount, &totalPoints);
+    double average = calculateAverage(totalPoints, userCount);
+    displayResult(average, userCount);
+
     return 0;
 }
 
-// 5-point likert scale function
-double likertScale()
+// input (data) collection function
+void getResponses(int maxUsers, int *userCount, double *totalPoints)
 {
-    int i;
-    double point = 0.0;
 
-    for (i = 1; i <= 4; i++) {
-        do {
-            // Ask user for input
-            printf("Class Attendance = Better Marks?\n");
-            printf("No %d: Select your point (1-5): ", i);
-            scanf("%lf", &point);
-
-            // Validate input
-            if (point < 1 || point > 5) {
-                printf("Invalid input! Please enter a number between 1 and 5.\n\n");
-            }
-        } while (point < 1 || point > 5); // Repeat until valid input
-    }
-
-    return point;
 }
 
 // average function
+double calculateAverage(double totalPoints, int userCount)
+{
+
+}
+
+// result (s) function
+void displayResult(double average, int userCount)
+{
+
+}
